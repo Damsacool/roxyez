@@ -84,13 +84,15 @@ export default function Home() {
           </div>
 
           <Animate type="zoomIn" delay={0.2}>
-            <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-full bg-gray-800 border-4 border-yellow-500 overflow-hidden">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D4E03AQGEnpcQmFgBTw/profile-displayphoto-scale_400_400/B4EZ0qwGRqJcAo-/0/1774538745914?e=1783555200&v=beta&t=zLIuYDoNbWwvYPbiCvntj78hUAwGTUSptgh1LE69lHE"
-                  alt="Prof. Roxanna Ezenekwe"
-                  className="w-full h-full object-cover"
-                />
+            <div className="flex justify-center items-center">
+              <div className="relative w-72 h-72 md:w-80 md:h-80">
+                <div className="w-full h-full rounded-full overflow-hidden border-4 border-yellow-500 shadow-2xl">
+                  <img
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQGEnpcQmFgBTw/profile-displayphoto-scale_400_400/B4EZ0qwGRqJcAo-/0/1774538745914?e=1783555200&v=beta&t=zLIuYDoNbWwvYPbiCvntj78hUAwGTUSptgh1LE69lHE"
+                    alt="Prof. Roxanna Ezenekwe"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
               </div>
             </div>
           </Animate>

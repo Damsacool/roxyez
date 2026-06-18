@@ -87,14 +87,23 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
-        >
-          <span className={`block w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <button
+            onClick={() => setDark(!dark)}
+            className="w-9 h-9 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:border-yellow-500 hover:text-yellow-500 transition-colors duration-200"
+            aria-label="Toggle dark mode"
+          >
+            {dark ? "☀" : "☾"}
+          </button>
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="flex flex-col gap-1.5 p-2"
+          >
+            <span className={`block w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+            <span className={`block w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+            <span className={`block w-6 h-0.5 bg-gray-900 dark:bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          </button>
+        </div>
       </div>
 
       {menuOpen && (
@@ -112,12 +121,7 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="flex items-center gap-4">
-            <button
-              onClick={() => setDark(!dark)}
-              className="text-sm text-gray-500 dark:text-gray-400"
-            >
-              {dark ? "Light mode" : "Dark mode"}
-            </button>
+            
             <Link
               to="/contact"
               onClick={() => setMenuOpen(false)}
