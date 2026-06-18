@@ -9,6 +9,15 @@ const getAllBooks = async (req, res) => {
   }
 };
 
+const getAllLiveBooks = async (req, res) => {
+  try {
+    const books = await Book.find({ status: "live" }).sort({ createdAt: -1 });
+    res.status(200).json(books);
+  } catch (error) {
+    res.status(500).json({ message: "Server error", error: error.message });
+  }
+}; 
+
 const createBook = async (req, res) => {
   try {
     const book = await Book.create(req.body);
@@ -41,4 +50,4 @@ const deleteBook = async (req, res) => {
   }
 };
 
-module.exports = { getAllBooks, createBook, updateBook, deleteBook };
+module.exports = { getAllBooks, getAllLiveBooks, createBook, updateBook, deleteBook };
