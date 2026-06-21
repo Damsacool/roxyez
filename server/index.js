@@ -23,6 +23,7 @@ app.use("/api/blogs", require("./Routes/blogRoutes"));
 app.use("/api/books", require("./Routes/bookRoutes"));
 app.use("/api/contact", require("./Routes/contactRoutes"));
 app.use("/api/upload", require("./Routes/uploadRoutes"))
+app.use("/api/lead-magnet", require("./Routes/leadMagnetRoutes"));
 
 app.get("/", (req, res) => {
   res.send("RoxyEZ API running");
