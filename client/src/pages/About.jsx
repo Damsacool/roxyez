@@ -52,7 +52,7 @@ export default function About() {
             </Animate>
             <Animate type="fadeRight" delay={0.2}>
               <p className="text-gray-400 leading-relaxed">
-                Roxanna Ezenekwe is a Mathematics Professor, published author, digital content creator and entrepreneur. She built RoxyEZ74 Consulting LLC to serve people who are serious about growth.
+                Roxanna Ezenekwe is an Educational Consultant and Financial Literacy Advocate. She built RoxyEZ74 Consulting LLC to serve people who are serious about growth.
               </p>
             </Animate>
             <Animate type="fadeRight" delay={0.3}>

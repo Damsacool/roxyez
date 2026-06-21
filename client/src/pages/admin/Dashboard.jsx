@@ -49,6 +49,15 @@ export default function Dashboard() {
           </Link>
 
           <Link
+            to="/admin/lead-magnet"
+            className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-yellow-500 transition-colors duration-300 flex flex-col gap-3"
+          >
+            <p className="text-white font-bold text-lg">Lead Magnet</p>
+            <p className="text-gray-500 text-sm">Manage your free download and see subscribers.</p>
+            <p className="text-yellow-500 text-xs font-medium mt-auto">Manage</p>
+          </Link>
+
+          <Link
             to="/admin/contacts"
             className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-yellow-500 transition-colors duration-300 flex flex-col gap-3"
           >

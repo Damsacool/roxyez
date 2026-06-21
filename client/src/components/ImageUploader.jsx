@@ -89,14 +89,14 @@ export default function ImageUploader({ value, onChange, label = "Image" }) {
                     Click to select an image
                   </p>
                   <p className="text-xs text-gray-600 mt-1">
-                    JPG, PNG or WebP
+                    JPG, PNG, WebP or PDF
                   </p>
                 </>
               )}
             </div>
             <input
               type="file"
-              accept="image/jpeg,image/png,image/webp"
+              accept="image/jpeg,image/png,image/webp,application/pdf"
               onChange={handleFileChange}
               className="hidden"
               disabled={uploading}
@@ -107,25 +107,38 @@ export default function ImageUploader({ value, onChange, label = "Image" }) {
 
       {/* Preview */}
       {preview && (
-        <div className="flex flex-col gap-2">
-          <p className="text-xs text-gray-500 uppercase tracking-widest">Preview</p>
-          <div className="relative w-full h-48 rounded-xl overflow-hidden border border-gray-700">
-            <img
-              src={preview}
-              alt="Preview"
-              className="w-full h-full object-cover"
-              onError={() => setPreview("")}
-            />
-            <button
-              type="button"
-              onClick={() => { setPreview(""); onChange("") }}
-              className="absolute top-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-lg hover:bg-red-500 transition-colors"
-            >
-              Remove
-            </button>
-          </div>
-        </div>
-      )}
+  <div className="flex flex-col gap-2">
+    <p className="text-xs text-gray-500 uppercase tracking-widest">Preview</p>
+    {preview.toLowerCase().endsWith(".pdf") ? (
+      <div className="relative w-full rounded-xl overflow-hidden border border-gray-700 bg-gray-800 p-4 flex items-center justify-between">
+        <span className="text-sm text-gray-300">PDF file uploaded</span>
+        <button
+          type="button"
+          onClick={() => { setPreview(""); onChange("") }}
+          className="bg-gray-900 text-white text-xs px-2 py-1 rounded-lg hover:bg-red-500 transition-colors"
+        >
+          Remove
+        </button>
+      </div>
+    ) : (
+      <div className="relative w-full h-48 rounded-xl overflow-hidden border border-gray-700">
+        <img
+          src={preview}
+          alt="Preview"
+          className="w-full h-full object-cover"
+          onError={() => setPreview("")}
+        />
+        <button
+          type="button"
+          onClick={() => { setPreview(""); onChange("") }}
+          className="absolute top-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded-lg hover:bg-red-500 transition-colors"
+        >
+          Remove
+        </button>
+      </div>
+    )}
+  </div>
+)}
     </div>
   )
 }

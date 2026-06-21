@@ -6,6 +6,7 @@ import api from "../utils/api"
 import BlogCard from "../components/BlogCard"
 import BookCard from "../components/BookCard"
 import Animate from "../components/Animate"
+import LeadMagnetForm from "../components/LeadMagnetForm"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -51,7 +52,7 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <Animate type="fadeDown" delay={0}>
               <p className="text-yellow-500 text-sm tracking-widest uppercase font-medium">
-                Educator. Creator. Entrepreneur.
+                Educational Consultant. Financial Literacy Advocate.
               </p>
             </Animate>
             <Animate type="fadeRight" delay={0.1}>
@@ -222,6 +223,8 @@ export default function Home() {
           </Animate>
         </div>
       </section>
+
+      <LeadMagnetForm />
 
       {/* CTA */}
       <section className="py-24 bg-gray-950 dark:bg-black">

@@ -15,6 +15,7 @@ import ManageBooks from "./pages/admin/ManageBooks"
 import ManageContacts from "./pages/admin/ManageContacts"
 import ProtectedRoute from "./components/ProtectedRoute"
 import NotFound from "./pages/NotFound"
+import ManageLeadMagnet from "./pages/admin/ManageLeadMagnet"
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/admin/lead-magnet" element={
+            <ProtectedRoute>
+              <ManageLeadMagnet />
+            </ProtectedRoute>
+          } />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/books" element={<Books />} />

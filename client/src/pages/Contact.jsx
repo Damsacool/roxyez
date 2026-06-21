@@ -141,8 +141,6 @@ export default function Contact() {
                   {[
                     { name: "YouTube", url: "https://www.youtube.com/@roxyezmathandmoney" },
                     { name: "LinkedIn", url: "https://www.linkedin.com/in/rezenekwe/" },
-                    { name: "Stan Store", url: "https://stan.store/rezenekwe" },
-                    { name: "Linktree", url: "https://linktr.ee/rezenekwe" },
                   ].map((s) => (
                     <a
                       key={s.name}
