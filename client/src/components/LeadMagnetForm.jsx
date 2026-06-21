@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import api from "../utils/api"
 import Animate from "./Animate"
+import LeadMagnetCard from "./LeadMagnetCard"
+import MagneticButton from "./MagneticButton"
 
 export default function LeadMagnetForm() {
   const [magnet, setMagnet] = useState(null)
@@ -26,64 +28,65 @@ export default function LeadMagnetForm() {
       setDownloadUrl(res.data.fileUrl)
       setSuccess(true)
     } catch {
+      // fail silently for the visitor
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <section className="py-24 bg-yellow-500">
-      <div className="max-w-3xl mx-auto px-6 text-center flex flex-col gap-6">
-        <Animate type="fadeUp">
-          <p className="text-gray-900 text-xs tracking-widest uppercase font-medium">
-            Free Resource
-          </p>
-        </Animate>
-        <Animate type="fadeUp" delay={0.1}>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-950">
-            {magnet.title}
-          </h2>
-        </Animate>
-        {magnet.description && (
-          <Animate type="fadeUp" delay={0.2}>
-            <p className="text-gray-800 leading-relaxed max-w-xl mx-auto">
-              {magnet.description}
-            </p>
-          </Animate>
-        )}
+    <section className="py-24 bg-white dark:bg-gray-950">
+      <div className="max-w-3xl mx-auto px-6">
+        <Animate type="zoomIn">
+          <LeadMagnetCard>
+              <div className="text-center flex flex-col gap-6">
+                <p className="text-yellow-500 text-xs tracking-widest uppercase font-medium">
+                  Free Resource
+                </p>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                  {magnet.title}
+                </h2>
+                {magnet.description && (
+                  <p className="text-gray-400 leading-relaxed max-w-xl mx-auto">
+                    {magnet.description}
+                  </p>
+                )}
+                <p className="text-gray-500 text-sm">
+                  Join hundreds already getting free tips on education, wealth and growth straight to their inbox.
+                </p>
 
-        <Animate type="fadeUp" delay={0.3}>
-          {success ? (
-            <div className="flex flex-col gap-3 items-center">
-              <p className="text-gray-950 font-medium">You are subscribed.</p>
-              <a 
-                href={downloadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-950 text-white font-semibold px-8 py-3 rounded-full hover:bg-gray-800 transition-colors duration-200"
-              >
-                Download Now
-              </a>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email address"
-                className="flex-1 rounded-full px-5 py-3 text-sm text-gray-900 focus:outline-none"
-              />
-              <button
-                type="submit"
-                disabled={loading}
-                className="bg-gray-950 text-white font-semibold px-8 py-3 rounded-full hover:bg-gray-800 transition-colors duration-200 disabled:opacity-50"
-              >
-                {loading ? "Sending..." : "Get It Free"}
-              </button>
-            </form>
-          )}
+                {success ? (
+                  <div className="flex flex-col gap-4 items-center pt-2">
+                    <p className="text-yellow-500 font-medium">You're in. Your download is ready below.</p>
+                    <a 
+                      href={downloadUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-yellow-500 text-gray-950 font-semibold px-10 py-4 rounded-full hover:bg-yellow-400 transition-colors duration-200"
+                    >
+                      Download Now
+                    </a>
+                  </div>
+                ) : (
+                  <form
+                    onSubmit={handleSubmit}
+                    className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-2"
+                  >
+                    <input
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Your email address"
+                      className="flex-1 rounded-full px-5 py-3.5 text-sm text-white bg-gray-900 border border-gray-700 focus:outline-none focus:border-yellow-500 transition-colors"
+                    />
+                    <MagneticButton disabled={loading}>
+                      {loading ? "Sending..." : "Send It To My Email"}
+                    </MagneticButton>
+                  </form>
+                )}
+              </div>
+          </LeadMagnetCard>
         </Animate>
       </div>
     </section>
