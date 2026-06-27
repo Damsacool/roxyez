@@ -2,6 +2,11 @@ import { useState } from "react"
 import api from "../utils/api"
 import Animate from "../components/Animate"
 
+const featuredLinks = [
+  { name: "RoxyEZ Academy", url: "https://roxyezacademy.com" },
+  { name: "The Learning Lab", url: "https://thelearninglab600.shop" },
+]
+
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" })
   const [loading, setLoading] = useState(false)
@@ -138,6 +143,17 @@ export default function Contact() {
               <div className="flex flex-col gap-3">
                 <p className="text-xs text-gray-400 uppercase tracking-widest">Connect</p>
                 <div className="flex flex-col gap-2">
+                  {featuredLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-gray-500 hover:text-yellow-600 transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
                   {[
                     { name: "YouTube", url: "https://www.youtube.com/@roxyezmathandmoney" },
                     { name: "LinkedIn", url: "https://www.linkedin.com/in/rezenekwe/" },

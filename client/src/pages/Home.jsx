@@ -10,6 +10,11 @@ import LeadMagnetForm from "../components/LeadMagnetForm"
 
 gsap.registerPlugin(ScrollTrigger)
 
+const featuredLinks = [
+  { name: "RoxyEZ Academy", url: "https://roxyezacademy.com" },
+  { name: "The Learning Lab", url: "https://thelearninglab600.shop" },
+]
+
 export default function Home() {
   const [blogs, setBlogs] = useState([])
   const [books, setBooks] = useState([])
@@ -97,6 +102,37 @@ export default function Home() {
               </div>
             </div>
           </Animate>
+        </div>
+      </section>
+
+      {/* FEATURED LINKS */}
+      <section className="py-16 bg-white dark:bg-gray-950 border-b border-gray-100 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <Animate type="fadeUp">
+            <div className="text-center mb-10">
+              <p className="text-yellow-600 dark:text-yellow-500 text-sm tracking-widest uppercase font-medium mb-3">
+                Explore More
+              </p>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                Visit My Featured Spaces
+              </h2>
+            </div>
+          </Animate>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {featuredLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 p-6 hover:border-yellow-500 hover:shadow-md transition-all duration-200"
+              >
+                <p className="text-lg font-semibold text-gray-900 dark:text-white">{link.name}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">Open this space in a new tab</p>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -240,13 +276,21 @@ export default function Home() {
             </p>
           </Animate>
           <Animate type="zoomIn" delay={0.2}>
-            <div>
+            <div className="flex flex-wrap justify-center gap-4">
               <Link
                 to="/contact"
                 className="bg-yellow-500 text-gray-950 font-semibold px-10 py-4 rounded-full hover:bg-yellow-400 transition-colors duration-200 inline-block"
               >
                 Get In Touch
               </Link>
+              <a
+                href="https://roxyezacademy.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gray-600 text-white px-10 py-4 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition-colors duration-200 inline-block"
+              >
+                Visit RoxyEZ Academy
+              </a>
             </div>
           </Animate>
         </div>

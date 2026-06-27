@@ -17,6 +17,11 @@ const socials = [
   { name: "Facebook", url: "https://web.facebook.com/roxanna.e.otaluka.ezenekwe" },
 ]
 
+const featuredLinks = [
+  { name: "RoxyEZ Academy", url: "https://roxyezacademy.com" },
+  { name: "The Learning Lab", url: "https://thelearninglab600.shop" },
+]
+
 export default function Footer() {
   return (
     <footer className="bg-gray-950 dark:bg-black text-gray-400 dark:text-gray-500 transition-colors duration-300">
@@ -55,6 +60,17 @@ export default function Footer() {
             <p className="text-white text-sm font-semibold tracking-widest uppercase mb-2">
               Connect
             </p>
+            {featuredLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm hover:text-yellow-500 transition-colors duration-200"
+              >
+                {link.name}
+              </a>
+            ))}
             {socials.map((social) => (
               <a
                 key={social.name}

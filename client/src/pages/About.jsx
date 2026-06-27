@@ -8,6 +8,11 @@ const achievements = [
   { number: "3", label: "Business Ventures" },
 ]
 
+const featuredLinks = [
+  { name: "RoxyEZ Academy", url: "https://roxyezacademy.com" },
+  { name: "The Learning Lab", url: "https://thelearninglab600.shop" },
+]
+
 const timeline = [
   {
     year: "2023",
@@ -76,6 +81,37 @@ export default function About() {
               </div>
             </div>
           </Animate>
+        </div>
+      </section>
+
+      {/* FEATURED LINKS */}
+      <section className="py-16 bg-gray-50 dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <Animate type="fadeUp">
+            <div className="text-center mb-10">
+              <p className="text-yellow-600 dark:text-yellow-500 text-sm tracking-widest uppercase font-medium mb-3">
+                Featured Spaces
+              </p>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                Explore More of Her Work
+              </h2>
+            </div>
+          </Animate>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {featuredLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 hover:border-yellow-500 hover:shadow-md transition-all duration-200"
+              >
+                <p className="text-lg font-semibold text-gray-900 dark:text-white">{link.name}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">Visit this platform directly</p>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
