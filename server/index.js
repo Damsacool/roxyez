@@ -11,6 +11,8 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://roxyez.vercel.app",
+    "https://roxannaezenekwe600.com",
+    "https://www.roxannaezenekwe600.com",
   ],
   credentials: true,
 }));
