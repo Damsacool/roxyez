@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(1,0,0,1,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1000" height="1000"><g>
+    <rect width="1000" height="1000" fill="#ffffff"></rect>
+    <g transform="matrix(2.5,0,0,2.5,0,0)">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="400" height="400">
+        <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400">
+          <g id="svgg">
+            <path id="path0" d="M 0 0 H 400 V 400 H 0 Z" stroke="none" fill="#448ccc" fill-rule="evenodd">
+            </path>
+            <path id="path2" d="M 0 280 H 400 V 400 H 0 Z" stroke="none" fill="#ecac4c" fill-rule="evenodd">
+            </path>
+            <path id="path1" d="M89.453 203.516 L 89.453 358.203 121.289 358.203 L 153.125 358.203 153.125 301.560 L 153.125 244.916 178.550 245.017 L 203.974 245.117 215.186 266.992 C 221.353 279.023,234.379 304.468,244.134 323.535 L 261.870 358.203 296.169 358.203 L 330.469 358.203 330.469 356.860 C 330.469 355.841,326.351 347.750,313.422 323.364 C 304.046 305.680,288.947 277.192,279.869 260.059 L 263.362 228.906 269.197 225.922 C 304.320 207.960,320.403 178.512,318.314 135.990 C 315.933 87.505,284.598 57.254,229.688 50.429 C 217.914 48.965,211.041 48.828,149.371 48.828 L 89.453 48.828 89.453 203.516 M212.556 100.786 C 238.571 103.327,252.643 117.260,254.681 142.496 C 256.605 166.313,245.689 183.982,225.000 190.541 C 216.851 193.124,216.974 193.116,183.496 193.264 L 153.125 193.399 153.125 146.895 L 153.125 100.391 180.818 100.391 C 196.566 100.391,210.256 100.561,212.556 100.786 " stroke="none" fill="#fbfbfb" fill-rule="evenodd">
+            </path>
+          </g>
+        </svg>
+      </svg>
+    </g>
+  </g></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(4.166666666666667,0,0,4.166666666666667,-5.684341886080802e-14,333.3333333333333)"><svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img"><title>Prof. Roxanna Ezenekwe</title><desc>Logo for Prof. Roxanna Ezenekwe — Educator, Author, Entrepreneur</desc><defs>
+  <style>
+    .logo-text-main { fill: #1a1a1a; }
+    .logo-text-sub { fill: #C9A96E; }
+    .logo-ring { stroke: #C9A96E; fill: none; }
+    .logo-mark-bg { fill: #C9A96E; }
+    .logo-tagline { fill: #888888; }
+    @media (prefers-color-scheme: dark) {
+      .logo-text-main { fill: #ffffff; }
+      .logo-text-sub { fill: #C9A96E; }
+      .logo-tagline { fill: #aaaaaa; }
+    }
+  </style>
+</defs><circle cx="36" cy="40" r="30" class="logo-ring" stroke-width="1.2"></circle><circle cx="36" cy="40" r="23" class="logo-ring" stroke-width="0.6" stroke-dasharray="3 2"></circle><polygon points="36,18 52,25 36,32 20,25" class="logo-mark-bg"></polygon><line x1="36" y1="32" x2="36" y2="43" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"></line><line x1="49" y1="25" x2="49" y2="36" stroke="#C9A96E" stroke-width="1.2" stroke-linecap="round"></line><circle cx="49" cy="38" r="2" fill="#C9A96E"></circle><path d="M22,47 Q36,43 36,47 Q36,43 50,47 L50,60 Q36,57 36,60 Q36,57 22,60 Z" class="logo-mark-bg"></path><line x1="36" y1="43" x2="36" y2="60" stroke="white" stroke-width="0.8" stroke-linecap="round"></line><line x1="25" y1="51" x2="34" y2="50" stroke="white" stroke-width="0.6" stroke-linecap="round"></line><line x1="25" y1="54" x2="34" y2="53" stroke="white" stroke-width="0.6" stroke-linecap="round"></line><line x1="38" y1="50" x2="47" y2="51" stroke="white" stroke-width="0.6" stroke-linecap="round"></line><line x1="38" y1="53" x2="47" y2="54" stroke="white" stroke-width="0.6" stroke-linecap="round"></line><line x1="74" y1="12" x2="74" y2="68" stroke="#C9A96E" stroke-width="0.8"></line><text x="82" y="26" font-family="Georgia, serif" font-size="7" letter-spacing="3" class="logo-text-sub">PROF.</text><text x="80" y="48" font-family="Georgia, serif" font-size="20" class="logo-text-main" font-weight="700" letter-spacing="0.5">Roxanna</text><text x="81" y="60" font-family="Georgia, serif" font-size="9" class="logo-text-sub" letter-spacing="2.5">EZENEKWE</text><line x1="81" y1="65" x2="238" y2="65" stroke="#C9A96E" stroke-width="0.5"></line><text x="81" y="74" font-family="Georgia, serif" font-size="5.5" letter-spacing="2" class="logo-tagline">EDUCATOR · AUTHOR · ENTREPRENEUR</text></svg></g></g></svg></g></svg>
