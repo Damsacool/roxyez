@@ -37,7 +37,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed">
-              Mathematics professor, published author, entrepreneur and digital content creator.
+              Mathematics educator, author, financial literacy advocate, entrepreneur, and AI & education thought leader.
             </p>
           </div>
 

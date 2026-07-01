@@ -15,24 +15,24 @@ const featuredLinks = [
 
 const timeline = [
   {
+    year: "1990s",
+    title: "Built a Career in Mathematics Education",
+    description: "Spent more than three decades teaching across high school, college, and university settings and helping learners overcome math anxiety with confidence and practical skill.",
+  },
+  {
+    year: "2000s",
+    title: "Expanded Into Authoring and Leadership",
+    description: "Began writing and co-authoring books that connect education, financial literacy, leadership, and personal growth with everyday life.",
+  },
+  {
     year: "2023",
-    title: "Founded RoxyEZ74 Consulting LLC",
-    description: "Launched a consulting business combining education, digital content and entrepreneurship coaching.",
+    title: "Founded RoxyEZ74 Educational Consulting LLC",
+    description: "Launched a consulting platform focused on education, financial literacy, personal development, and emerging technologies.",
   },
   {
-    year: "2024",
-    title: "Published Multiple Books",
-    description: "Released several titles on Amazon covering wealth building, passive income, education technology and digital marketing.",
-  },
-  {
-    year: "2025",
-    title: "Launched The Learning Lab",
-    description: "Built a faith-inspired apparel brand serving Kingdom entrepreneurs across the United States.",
-  },
-  {
-    year: "2026",
-    title: "Expanding Digital Presence",
-    description: "Growing YouTube, TikTok and LinkedIn platforms while continuing to serve students and entrepreneurs globally.",
+    year: "2024+",
+    title: "Created RoxyEZ Math and Money and RoxyEZ Academy",
+    description: "Built brands that deliver training, coaching, digital content, and resources centered on mathematics, money management, mindset, and artificial intelligence.",
   },
 ]
 
@@ -51,18 +51,18 @@ export default function About() {
             </Animate>
             <Animate type="fadeRight" delay={0.1}>
               <h1 className="text-5xl font-bold text-white leading-tight">
-                Professor, Author
-                <span className="block text-yellow-500">and Entrepreneur</span>
+                Mathematics Educator,
+                <span className="block text-yellow-500">Author, and Thought Leader</span>
               </h1>
             </Animate>
             <Animate type="fadeRight" delay={0.2}>
               <p className="text-gray-400 leading-relaxed">
-                Roxanna Ezenekwe is an Educational Consultant and Financial Literacy Advocate. She built RoxyEZ74 Consulting LLC to serve people who are serious about growth.
+                Prof. Roxanna Ezenekwe is a mathematics educator, author, financial literacy advocate, entrepreneur, and AI & education thought leader with more than 30 years of experience helping learners build confidence, competence, and lasting opportunity.
               </p>
             </Animate>
             <Animate type="fadeRight" delay={0.3}>
               <p className="text-gray-400 leading-relaxed">
-                Her work sits at the intersection of education, faith and business. Everything she does is built around one idea: people deserve access to knowledge that actually changes their lives.
+                Born and raised in Nigeria, she earned a Bachelor of Science in Accountancy, a National Certificate in Education in Mathematics and Chemistry, and a Master’s Degree in Mathematics Teacher Education. Today, as a doctoral candidate, she continues to lead through lifelong learning and practical impact.
               </p>
             </Animate>
           </div>
@@ -81,6 +81,34 @@ export default function About() {
               </div>
             </div>
           </Animate>
+        </div>
+      </section>
+
+      {/* FULL BIOGRAPHY */}
+      <section className="py-16 bg-gray-50 dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <Animate type="fadeUp">
+            <div className="text-center mb-10">
+              <p className="text-yellow-600 dark:text-yellow-500 text-sm tracking-widest uppercase font-medium mb-3">
+                Full Biography
+              </p>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                Her Mission in Action
+              </h2>
+            </div>
+          </Animate>
+
+          <div className="max-w-4xl mx-auto rounded-3xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-sm">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+              Prof. Roxanna Ezenekwe has spent more than three decades helping people believe they can master what once intimidated them. Her work spans mathematics education, financial literacy, leadership, entrepreneurship, and emerging technologies.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+              She is the Founder and CEO of RoxyEZ74 Educational Consulting LLC, an organization devoted to empowering learners, educators, and professionals through education, financial literacy, personal development, and emerging technologies. Through her brands RoxyEZ Math and Money and RoxyEZ Academy, she delivers educational resources, training programs, coaching, and digital content centered on mathematics, money management, mindset, and artificial intelligence.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              She is also a prolific author, having written and co-authored 12 books spanning financial literacy, wealth building, education, leadership, and personal growth, and she remains deeply committed to helping families, students, and professionals build knowledge, confidence, and generational wealth.
+            </p>
+          </div>
         </div>
       </section>
 

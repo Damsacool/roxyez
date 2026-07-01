@@ -57,7 +57,7 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <Animate type="fadeDown" delay={0}>
               <p className="text-yellow-500 text-sm tracking-widest uppercase font-medium">
-                Educational Consultant. Financial Literacy Advocate.
+                Prof. Roxanna Ezenekwe, M.Ed. | Mathematics Educator • Author • Financial Literacy Advocate • Entrepreneur • AI & Education Thought Leader
               </p>
             </Animate>
             <Animate type="fadeRight" delay={0.1}>
@@ -68,7 +68,7 @@ export default function Home() {
             </Animate>
             <Animate type="fadeUp" delay={0.2}>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md">
-                Mathematics professor. Published author. Entrepreneur. Content creator. This is the official home of Prof. Roxanna Ezenekwe.
+                Mathematics educator, author, financial literacy advocate, entrepreneur, and AI & education thought leader with over 30 years of experience helping learners build confidence, competence, and lasting opportunity.
               </p>
             </Animate>
             <Animate type="fadeUp" delay={0.3}>
@@ -154,15 +154,15 @@ export default function Home() {
             {[
               {
                 title: "Mathematics Education",
-                description: "Online and in-person math sessions for learners at every level. Interactive, structured and results focused.",
+                description: "Helping learners of every age build confidence, competence, and practical problem-solving skills in mathematics.",
               },
               {
-                title: "Digital Content Creation",
-                description: "Content that educates, sparks conversations and builds real audiences across platforms.",
+                title: "Financial Literacy & Learning",
+                description: "Creating educational content that blends technology, AI, and accessible learning for students, educators, and professionals.",
               },
               {
                 title: "Entrepreneurship Coaching",
-                description: "Practical guidance for people building businesses and creating income outside of a 9 to 5.",
+                description: "Guiding individuals and founders to grow financially literate, purpose-driven, and resilient businesses.",
               },
             ].map((item) => (
               <div key={item.title} className="service-card opacity-0">
